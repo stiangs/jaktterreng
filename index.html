@@ -5,18 +5,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.7.5/proj4.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🦌</text></svg>"
+    />
   </head>
   <body>
     <header>
-      <h1>Jaktterreng til GPX</h1>
+      <h1>🦌 Jaktterreng til GPX 🦌</h1>
     </header>
 
     <main>
+      <div>
+        <p>
+          Denne siden innolder verktøy som kan lage GPX-filer av jaktterrenget
+          ditt. Enten kan du tegne det inn selv i GPX-studio eller finne
+          koordinatene som inatur bruker hvis du har kjøpt jaktkort der. Etter
+          at du har tegnet eller generert en GPX-fil kan denne lastes inn på
+          GPS-en din.
+        </p>
+        <p>
+          <strong>NB:</strong> Løsningen garanterer ikke at det genererte
+          jaktterrenget blir korrekt.
+        </p>
+      </div>
       <label for="filename">Filnavn:</label>
       <input type="text" id="filename" value="jaktfelt" />
 
       <label for="coordinateInput"
-        >Lim inn koordinatene fra iNatur her (e.g.,
+        >Lim inn koordinatene fra inatur her (e.g.,
         [[306537.1,6616620.1],[306956.3,6616777.3]]):</label
       >
       <textarea
@@ -27,7 +44,7 @@
       >
       </textarea>
 
-      <button onclick="convertToGpx()">Konverter til GPX</button>
+      <button onclick="convertToGpx()">Last ned GPX 🤞</button>
 
       <!-- First Guide -->
       <div
@@ -59,7 +76,7 @@
         onclick="toggleGuide('guide2-container', 'arrow2')"
       >
         <span id="arrow2" class="arrow">➤</span>
-        <h2>Finne koordinater fra iNatur</h2>
+        <h2>Alternativ 1 (avansert 🤓): Finne koordinater fra inatur</h2>
       </div>
       <div id="guide2-container" class="guide-container">
         <!-- Content of the second guide -->
@@ -94,7 +111,7 @@
         onclick="toggleGuide('guide3-container', 'arrow3')"
       >
         <span id="arrow3" class="arrow">➤</span>
-        <h2>Tegne en GPX-fil med GPX Studio</h2>
+        <h2>Alternativ 2 (enkel 😌): Tegne en GPX-fil med GPX Studio</h2>
       </div>
       <div id="guide3-container" class="guide-container">
         <ol>
