@@ -28,6 +28,93 @@
       </textarea>
 
       <button onclick="convertToGpx()">Konverter til GPX</button>
+
+      <!-- First Guide -->
+      <div
+        class="guide-title"
+        onclick="toggleGuide('guide1-container', 'arrow1')"
+      >
+        <span id="arrow1" class="arrow">➤</span>
+        <h2>Legge til GPX-fil på Garmin 66i</h2>
+      </div>
+      <div id="guide1-container" class="guide-container">
+        <!-- Content of the first guide -->
+        <ol>
+          <li>Last ned GPX-filen du ønsker å bruke.</li>
+          <li>Koble Garmin 66i til datamaskinen din via USB-kabel.</li>
+          <li>Åpne Garmin-enheten som en ekstern disk på datamaskinen din.</li>
+          <li>Naviger til mappen som heter 'GPX' på Garmin-enheten.</li>
+          <li>Dra og slipp GPX-filen inn i denne mappen.</li>
+          <li>Løsne Garmin-enheten fra datamaskinen.</li>
+          <li>
+            På Garmin 66i, gå til 'Kart' og velg deretter 'Lag' for å aktivere
+            GPX-laget.
+          </li>
+        </ol>
+      </div>
+
+      <!-- Second Guide -->
+      <div
+        class="guide-title"
+        onclick="toggleGuide('guide2-container', 'arrow2')"
+      >
+        <span id="arrow2" class="arrow">➤</span>
+        <h2>Finne koordinater fra iNatur</h2>
+      </div>
+      <div id="guide2-container" class="guide-container">
+        <!-- Content of the second guide -->
+        <ol>
+          <li>
+            Åpne nettsiden hvor informasjon om jaktfeltet er tilgjengelig.
+          </li>
+          <li>
+            Høyreklikk på siden og velg "Inspisere" for å åpne utviklerverktøy.
+          </li>
+          <li>Gå til "Nettverk"-fanen i utviklerverktøy.</li>
+          <li>Søk etter jaktfelt-navnet i søkefeltet.</li>
+          <li>Åpne nettverkskallet som inneholder jaktfelt-informasjonen.</li>
+          <li>
+            Naviger til "geometry" og deretter "rings" for å finne koordinatene.
+          </li>
+          <li>Kopier koordinatene.</li>
+          <li>
+            Gå til et nettsted som kan konvertere disse koordinatene til en
+            GPX-fil.
+          </li>
+          <li>
+            Lagre GPX-filen og følg den første guiden for å legge den til på din
+            Garmin 66i.
+          </li>
+        </ol>
+      </div>
+
+      <!-- Third Guide -->
+      <div
+        class="guide-title"
+        onclick="toggleGuide('guide3-container', 'arrow3')"
+      >
+        <span id="arrow3" class="arrow">➤</span>
+        <h2>Tegne en GPX-fil med GPX Studio</h2>
+      </div>
+      <div id="guide3-container" class="guide-container">
+        <ol>
+          <li>Gå til GPX Studio-nettsiden.</li>
+          <li>
+            Klikk på "Start Drawing" eller tilsvarende knapp for å begynne å
+            tegne din rute.
+          </li>
+          <li>Bruk musen til å tegne ruten på kartet.</li>
+          <li>
+            Når du er ferdig, klikk på "Save" eller "Export" for å laste ned
+            GPX-filen.
+          </li>
+          <li>Lagre GPX-filen på datamaskinen din.</li>
+          <li>
+            Følg den første guiden for å legge denne GPX-filen til på din Garmin
+            66i.
+          </li>
+        </ol>
+      </div>
     </main>
   </body>
 </html>

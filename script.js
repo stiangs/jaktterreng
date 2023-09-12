@@ -53,3 +53,16 @@ function convertToGpx() {
   a.click();
   window.URL.revokeObjectURL(url);
 }
+
+function toggleGuide(guideId, arrowId) {
+  const guideContainer = document.getElementById(guideId);
+  const arrow = document.getElementById(arrowId);
+  if (guideContainer.style.display === "none") {
+    guideContainer.style.display = "block";
+    arrow.classList.add("open");
+    guideContainer.scrollIntoView({ behavior: "smooth" });
+  } else {
+    guideContainer.style.display = "none";
+    arrow.classList.remove("open");
+  }
+}

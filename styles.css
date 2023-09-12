@@ -38,3 +38,24 @@ body {
   button:hover {
     background-color: #45a049;
   }
+  .guide-container {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: none;
+  }
+  .guide-title {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+  }
+  .arrow {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  .arrow.open {
+    transform: rotate(90deg);
+  }
