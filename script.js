@@ -1,6 +1,6 @@
 // Set default filename to "jaktfelt" + today's date
 const today = new Date().toISOString().slice(0, 10);
-document.getElementById("filename").value = "jaktfelt" + today;
+document.getElementById("filename").value = "jaktfelt-" + today;
 
 // Define UTM zone 33 with EUREF89 datum
 const utm33 = "+proj=utm +zone=33 +ellps=WGS84 +datum=WGS84 +units=m +no_defs";
@@ -11,7 +11,7 @@ const wgs84 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
 function convertToGpx() {
   const input = document.getElementById("coordinateInput").value.trim();
   const filename =
-    document.getElementById("filename").value || "jaktfelt" + today;
+    document.getElementById("filename").value || "jaktfelt-" + today;
 
   // Parse the input as JSON
   let utmCoordinates;

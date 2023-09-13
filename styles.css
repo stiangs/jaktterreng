@@ -59,3 +59,8 @@ body {
   .arrow.open {
     transform: rotate(90deg);
   }
+
+  .ingress {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
